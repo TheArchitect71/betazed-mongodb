@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { PeopleModule } from './people/people.module';
 import { mongoUri } from './offline-config';
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { mongoUri } from './offline-config';
     }),
     AuthModule,
     UsersModule,
+    PeopleModule,
   ],
   controllers: [AppController],
   providers: [AppService],
